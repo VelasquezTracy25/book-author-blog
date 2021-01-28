@@ -14,28 +14,28 @@
   </head>
   <body>
     <nav>
-      <div id="slideout-menu">
-        <ul>
-          <li><a href="/"></a>Home</li>
+      <div>
+        <ul id="main-menu">
           <li><a href="/blog"></a>Blog</li>
           <li><a href="/book"></a>Book</li>
+          <div id="logo">
+            <a href="/">
+              <img
+                id="logo-img"
+                src="/img/logo.png"
+                alt="Martha Miller Writes Logo"
+              />
+            </a>
+          </div>
           <li><a href="/about"></a>About</li>
           <li><a href="/contact"></a>Contact</li>
         </ul>
       </div>
-      <div id="logo">
-        <a href="#">
-          <img
-            id="logo-img"
-            src="/img/logo.png"
-            alt="Martha Miller Writes Logo"
-          />
-        </a>
-      </div>
+      <!-- mobile -->
       <div id="menu-icon">
         <i class="fas fa-bars"></i>
       </div>
-      <ul>
+      <ul id="slideout-menu">
         <li><a href="/"></a>Home</li>
         <li><a href="/blog"></a>Blog</li>
         <li><a href="/book"></a>Book</li>
@@ -43,7 +43,6 @@
         <li><a href="/contact"></a>Contact</li>
       </ul>
     </nav>
-
     <div id="banner">
       <h1>Welcome to Martha Miller Writes</h1>
       <p>
@@ -57,7 +56,6 @@
         atque! Eligendi excepturi ex sunt omnis numquam!
       </p>
     </div>
-
     <main>
       <a href="#">
         <h2 class="section-heading">All Blogs</h2>
@@ -67,7 +65,7 @@
         <div class="card">
           <div class="card-image">
             <a href="">
-              <img src="/img/beach-1.jpg" alt="Card Image" class="card-image"/>
+              <img src="/img/beach-1.jpg" alt="Card Image" class="card-image" />
             </a>
           </div>
           <div class="card-description">
@@ -91,61 +89,85 @@
           </div>
         </div>
         <div class="card">
-            <div class="card-image">
-              <a href="">
-                <img src="/img/beach-2.jpg" alt="Card Image" class="card-image"/>
-              </a>
-            </div>
-            <div class="card-description">
-              <a href="#">
-                <h3>Blog Title</h3>
-              </a>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Consectetur, eum. Aspernatur dolorum corrupti odio voluptate enim
-                ex optio dicta repellendus eum, vero voluptatibus quisquam eius
-                inventore impedit illum architecto eligendi! Quibusdam laboriosam,
-                voluptate consequuntur blanditiis, provident ducimus numquam dolor
-                totam eos dicta autem accusantium magni. Libero eaque, ipsa quas
-                praesentium exercitationem numquam quam facere laboriosam aliquam
-                delectus fugit aliquid placeat! Ipsa enim veniam autem, alias qui
-                numquam harum necessitatibus officiis fuga saepe, molestiae et nam
-                optio eum quo doloremque voluptatem! Sit repellendus vel velit aut
-                iure corrupti dolorum odio. Dicta!
-              </p>
-              <a href="#" class="btn-readmore">Read More</a>
-            </div>
+          <div class="card-image">
+            <a href="">
+              <img src="/img/beach-2.jpg" alt="Card Image" class="card-image" />
+            </a>
           </div>
+          <div class="card-description">
+            <a href="#">
+              <h3>Blog Title</h3>
+            </a>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Consectetur, eum. Aspernatur dolorum corrupti odio voluptate enim
+              ex optio dicta repellendus eum, vero voluptatibus quisquam eius
+              inventore impedit illum architecto eligendi! Quibusdam laboriosam,
+              voluptate consequuntur blanditiis, provident ducimus numquam dolor
+              totam eos dicta autem accusantium magni. Libero eaque, ipsa quas
+              praesentium exercitationem numquam quam facere laboriosam aliquam
+              delectus fugit aliquid placeat! Ipsa enim veniam autem, alias qui
+              numquam harum necessitatibus officiis fuga saepe, molestiae et nam
+              optio eum quo doloremque voluptatem! Sit repellendus vel velit aut
+              iure corrupti dolorum odio. Dicta!
+            </p>
+            <a href="#" class="btn-readmore">Read More</a>
+          </div>
+        </div>
       </section>
-    <section id="source-section">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laboriosam labore sit, odio iste, rerum officiis et soluta quis magni aliquid maxime nemo, aut ullam recusandae architecto eos. Laboriosam, debitis?Dolorum enim beatae blanditiis suscipit sapiente sit laudantium accusantium cumque deserunt hic error, quod adipisci reiciendis id velit iusto, quaerat eaque fugiat doloribus. Amet architecto vel sunt. Provident, perferendis laudantium.</p>
-    </section>
-    <footer>
-        <div id="footer">
-         <ul>
+      <section id="source-section">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+          laboriosam labore sit, odio iste, rerum officiis et soluta quis magni
+          aliquid maxime nemo, aut ullam recusandae architecto eos. Laboriosam,
+          debitis?Dolorum enim beatae blanditiis suscipit sapiente sit
+          laudantium accusantium cumque deserunt hic error, quod adipisci
+          reiciendis id velit iusto, quaerat eaque fugiat doloribus. Amet
+          architecto vel sunt. Provident, perferendis laudantium.
+        </p>
+      </section>
+      <footer>
+            <div id="left-footer">
+                <h3>Quick Links</h3>
+                <p>
+          <ul>
             <li><a href="/"></a>Home</li>
             <li><a href="/blog"></a>Blog</li>
             <li><a href="/book"></a>Book</li>
             <li><a href="/about"></a>About</li>
             <li><a href="/contact"></a>Contact</li>
-         </ul>
+          </ul>
+        </p>
+    </div>
+        <div id="right-footer">
+            <h3>Follow me on</h3>
+                <div id="social-media-footer">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div id="social-footer">
-            <ul>
-                <li>
-                    <a href="#">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iste modi unde vero delectus! Rerum voluptatem magnam voluptas dolor delectus animi enim vel, itaque amet sunt odio aut molestias facere?Neque reiciendis ea earum id quaerat ipsum ducimus, est, nam quis harum maxime? Deleniti, quis! Dolorum deleniti quo, consequuntur laudantium recusandae illum, accusamus quos non sed saepe neque, mollitia harum?</p>
-    </footer>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iste
+          modi unde vero delectus! Rerum voluptatem magnam voluptas dolor
+          delectus animi enim vel, itaque amet sunt odio aut molestias
+          facere?Neque reiciendis ea earum id quaerat ipsum ducimus, est, nam
+          quis harum maxime? Deleniti, quis! Dolorum deleniti quo, consequuntur
+          laudantium recusandae illum, accusamus quos non sed saepe neque,
+          mollitia harum?
+        </p>
+        <div class="center">
+        <a href="#" class="btn-readmore">Read More</a>
+        </div>  
+      </footer>
     </main>
   </body>
 </html>
