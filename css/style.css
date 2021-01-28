@@ -318,7 +318,20 @@ footer #social-media-footer ul li:hover a .fa-twitter{
         color: #303F3C;
         transition: 0.4s;
     }
+}
 
+@media (max-width: 600px){
+    main {
+        width: 100%;
+    }
+
+    h1{
+        font-size: 48px;
+    }
+
+    .card{
+        text-align: center;
+    }
 }
 
 
