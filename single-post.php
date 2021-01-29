@@ -1,34 +1,5 @@
-<?php get_header(); ?>  <body>
-    <nav>
-      <div>
-        <ul id="main-menu">
-            <li><a href="bloglist.html">Blog</a></li>
-            <li><a href="book.html">Book</a></li>
-            <div id="logo">
-              <a href="index.html">
-                <img
-                  id="logo-img"
-                  src="/img/logo.png"
-                  alt="Martha Miller Writes Logo"
-                />
-              </a>
-            </div>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-      </div>
-      <!-- mobile -->
-      <div id="menu-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      <ul id="slideout-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="bloglist.html">Blog</a></li>
-        <li><a href="book.html">Book</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+<?php get_header(); ?>  
+<body>
     <main>
         <h2 class="page-heading">Blog Post Heading</h2>
         <div id="post-container">

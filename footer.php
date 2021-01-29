@@ -3,11 +3,11 @@
                 <h3>Quick Links</h3>
                 <p>
           <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="bloglist.html">Blog</a></li>
-            <li><a href="book.html">Book</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="bloglist.php">Blog</a></li>
+            <li><a href="book.php">Book</a></li>
+            <li><a href="about.php">About</a></li>
+            <li><a href="contact.php">Contact</a></li>
           </ul>
         </p>
     </div>
@@ -39,7 +39,8 @@
         <div class="center">
         <a href="#" class="btn-readmore">Read More</a>
         </div>  
-
         <?php wp_head(); ?>
-
       </footer>
+    <script src="main.js"></script>
+  </body>
+</html>

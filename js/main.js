@@ -1,3 +1,5 @@
+alert("Hi!");
+
 const menuIcon = document.getElementById("menu-icon");
 const slideoutMenu = document.getElementById("slideout-menu");
 
@@ -10,3 +12,4 @@ menuIcon.addEventListener('click', function(){
         slideoutMenu.style.pointerEvents = "auto";
     }
 })
+

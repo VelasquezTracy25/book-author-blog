@@ -1,21 +1,34 @@
-<?php get_header(); ?>
+<?php get_header(); 
+
+?>
+
+<?php 
+
+
+while(have_blogs()){
+  the_blog();
+
+  echo "hi";
+}
+?>
+
   <body>
     <nav>
       <div>
         <ul id="main-menu">
-          <li><a href="bloglist.html">Blog</a></li>
-          <li><a href="book.html">Book</a></li>
+          <li><a href="bloglist.php">Blog</a></li>
+          <li><a href="book.php">Book</a></li>
           <div id="logo">
-            <a href="index.html">
+            <a href="index.php">
               <img
                 id="logo-img"
-                src="/img/logo.png"
+                src="logo.png"
                 alt="Martha Miller Writes Logo"
               />
             </a>
           </div>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="about.php">About</a></li>
+          <li><a href="contact.php">Contact</a></li>
         </ul>
       </div>
       <!-- mobile -->
@@ -23,11 +36,11 @@
         <i class="fas fa-bars"></i>
       </div>
       <ul id="slideout-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="bloglist.html">Blog</a></li>
-        <li><a href="book.html">Book</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="bloglist.php">Blog</a></li>
+        <li><a href="book.php">Book</a></li>
+        <li><a href="about.php">About</a></li>
+        <li><a href="contact.php">Contact</a></li>
       </ul>
     </nav>
     <main>
