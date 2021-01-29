@@ -3,11 +3,11 @@
                 <h3>Quick Links</h3>
                 <p>
           <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="bloglist.php">Blog</a></li>
-            <li><a href="book.php">Book</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="contact.php">Contact</a></li>
+          <li><a href="<?php echo site_url(''); ?>">Home</a>
+          <li><a href="<?php echo site_url('/blog'); ?>">Blog</a></li>
+          <li><a href="<?php echo site_url('/book'); ?>">Book</a></li>
+          <li><a href="<?php echo site_url('/about'); ?>">About</a></li>
+          <li><a href="<?php echo site_url('/contact'); ?>">Contact</a></li>
           </ul>
         </p>
     </div>

@@ -9,19 +9,35 @@
     <nav>
       <div>
         <ul id="main-menu">
-          <li><a href="<?php echo site_url('/blog'); ?>">Blog</a></li>
-          <li><a href="<?php echo site_url('/book'); ?>">Book</a></li>
+          <li>
+            <a href="<?php echo site_url('/blog'); ?>"            
+              <?php if(get_post_type() == 'post') echo 'class="active"'?>
+            >Blog</a>
+          </li>
+          <li>
+            <a href="<?php echo site_url('/book'); ?>"
+              <?php if(is_page('about')) echo 'class="active"'?>
+            >Book</a>
+          </li>
           <div id="logo">
-            <a href="<?php echo site_url(''); ?>">
+            <a href="<?php echo site_url('');?>"
+              <?php if(is_front_page()) echo 'class="active"'?>>
               <img
                 id="logo-img"
-                src="<?php echo get_template_directory_uri(); ?>/img/logo.png"
+                src="<?php echo get_template_directory_uri();?>/img/logo.png"
                 alt="Martha Miller Writes Logo"
               />
             </a>
           </div>
-          <li><a href="<?php echo site_url('/about'); ?>">About</a></li>
-          <li><a href="<?php echo site_url('/contact'); ?>">Contact</a></li>
+          <li>
+            <a href="<?php echo site_url('/about'); ?>"
+              <?php if(is_page('about')) echo 'class="active"'?>
+            >About</a>
+          </li>
+          <li><a href="<?php echo site_url('/contact'); ?>"
+            <?php if(is_page('contact')) echo 'class="active"'?>
+          >Contact</a>
+          </li>
         </ul>
       </div>
       <!-- mobile -->
@@ -29,10 +45,10 @@
         <i class="fas fa-bars"></i>
       </div>
       <ul id="slideout-menu">
-        <li><a href="index.php">Home</a></li>
-        <li><a href="bloglist.php">Blog</a></li>
-        <li><a href="book.php">Book</a></li>
-        <li><a href="page-about.php">About</a></li>
-        <li><a href="contact.php">Contact</a></li>
+          <li><a href="<?php echo site_url(''); ?>">Home</a>
+          <li><a href="<?php echo site_url('/blog'); ?>">Blog</a></li>
+          <li><a href="<?php echo site_url('/book'); ?>">Book</a></li>
+          <li><a href="<?php echo site_url('/about'); ?>">About</a></li>
+          <li><a href="<?php echo site_url('/contact'); ?>">Contact</a></li>
       </ul>
     </nav>

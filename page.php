@@ -1,4 +1,10 @@
-<?php get_header(); ?>
+<?php get_header(); 
+
+while(have_posts()) {
+  the_post();
+  
+  ?>
+  
   <body>
     <main>
         <h2 class="page-heading">About Martha Miller</h2>
@@ -24,6 +30,7 @@
               </div>
             </section>
       
+            <?php } ?>
             <aside id="sidebar">
               <h3>Sidebar Heading</h3>
               <p>Sidebar 1</p>

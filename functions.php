@@ -23,28 +23,28 @@ function mm_init(){
 
 add_action('after_setup_theme', 'mm_init');
 
-// // // Blog Post Type
+// News Posts Type
 
-// function mm_custom_post_type(){
-//     register_post_type('blog',
-//     array(
-//         'rewrite' => array('slug' => 'blogs'),
-//         'labels' => array(
-//             'name' => 'Blogs',
-//             'singular_name' => 'Blog',
-//             'add_new_item' => 'Add New Blog',
-//             'edit_item' => 'Edit Blog'
-//         ),
-//         'menu-icon' => 'dashicons-clipboard',
-//         'public' => true,
-//         'has_archive' => true,
-//         'supports' => array(
-//             'title', 'thumbnail', 'editor', 'excerpt', 'comments'
-//             )
-//         )
-//     );
-// }
+function mm_custom_post_type(){
+    register_post_type('mentions',
+    array(
+        'rewrite' => array('slug' => 'mentions'),
+        'labels' => array(
+            'name' => 'Mentions',
+            'singular_name' => 'Mention',
+            'add_new_item' => 'Add New Mention',
+            'edit_item' => 'Edit Mention'
+        ),
+        'menu-icon' => 'dashicons-clipboard',
+        'public' => true,
+        'has_archive' => true,
+        'supports' => array(
+            'title', 'thumbnail', 'editor', 'excerpt', 'comments'
+            )
+        )
+    );
+}
 
-// add_action('init', 'mm_custom_post_type');
+add_action('init', 'mm_custom_post_type');
 
 

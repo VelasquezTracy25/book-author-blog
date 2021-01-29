@@ -1,6 +1,8 @@
+<!-- NEWS -->
+
 <?php get_header(); ?>
 
-    <div id="banner">
+    <!-- <div id="banner">
       <h1>Welcome to Martha Miller Writes</h1>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, quas
@@ -12,7 +14,7 @@
         Accusantium natus quaerat consequuntur asperiores velit hic cumque
         atque! Eligendi excepturi ex sunt omnis numquam!
       </p>
-    </div>
+    </div> -->
     <main>
       <a href="<?php echo site_url('/blog'); ?>">
         <h2 class="section-heading">All Blogs</h2>
@@ -20,19 +22,10 @@
 
       <section>
 
-      <?php 
-      
-      $args = array(
-        'post_type' => 'post',
-        'posts_per_page' => 2,
-      );
+      <?php
 
-      $blogposts = new WP_Query($args);
-
-      while ($blogposts->have_posts()){
-        $blogposts->the_post();
-     
-      
+      while (have_posts()){
+        the_post();
       ?>
 
       <div class="card">
@@ -45,6 +38,9 @@
             <a href="<?php the_permalink(); ?>">
               <h3><?php the_title(); ?></h3>
             </a>
+            <div class="card-meta">
+            <?php the_time('F j, Y'); ?> in <a href="#"><?php echo get_the_category_list(',')?></a>
+            </div>
             <p>
             <?php echo wp_trim_words(get_the_excerpt(), 30); ?>
             </p>
@@ -55,7 +51,11 @@
     <?php  } wp_reset_query(); ?>
 
       </section>
-      <section id="source-section">
+
+      <div class="pagination">
+        <?php echo paginate_links(); ?>
+      </div>
+      <!-- <section id="source-section">
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
           laboriosam labore sit, odio iste, rerum officiis et soluta quis magni
@@ -65,7 +65,7 @@
           reiciendis id velit iusto, quaerat eaque fugiat doloribus. Amet
           architecto vel sunt. Provident, perferendis laudantium.
         </p>
-      </section>
+      </section> -->
       </main>
     <?php get_footer(); ?>
 
