@@ -39,4 +39,7 @@
         <div class="center">
         <a href="#" class="btn-readmore">Read More</a>
         </div>  
+
+        <?php wp_head(); ?>
+
       </footer>
