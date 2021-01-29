@@ -23,7 +23,7 @@
       <?php 
       
       $args = array(
-        'post_type' => 'blog',
+        'post_type' => 'post',
         'posts_per_page' => 2,
       );
 
@@ -49,7 +49,8 @@
             <?php echo wp_trim_words(get_the_excerpt(), 30); ?>
             </p>
             <a href="<?php echo the_permalink(); ?>" class="btn-readmore">Read More</a>
-          </div>
+    }
+                  </div>
       </div>
 
     <?php wp_reset_query(); ?>
@@ -67,5 +68,5 @@
         </p>
       </section>
       </main>
-      <?php get_footer(); ?>
+    <?php get_footer(); ?>
 
