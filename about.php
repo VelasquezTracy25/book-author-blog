@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Martha Miller Writes</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-  </head>
+<?php get_header(); ?>
   <body>
     <nav>
       <div>
@@ -44,14 +31,10 @@
       </ul>
     </nav>
     <main>
-        <h2 class="page-heading">Blog Post Heading</h2>
+        <h2 class="page-heading">About Martha Miller</h2>
         <div id="post-container">
             <section id="blogpost">
               <div class="card">
-                <div class="card-meta-blogpost">
-                  Posted by Admin on 01/01/2018 in
-                  <a href="#">Web Dev</a>
-                </div>
                 <div class="card-image">
                   <img src="/img/beach-1.jpg" alt="Card Image">
                 </div>
@@ -69,10 +52,6 @@
                     blanditiis quae iure ducimus explicabo dicta molestias, reiciendis quidem unde.</p>
                 </div>
               </div>
-      
-              <div id="comments-section">
-                Comments Section
-              </div>
             </section>
       
             <aside id="sidebar">
@@ -80,48 +59,10 @@
               <p>Sidebar 1</p>
             </aside>
           </div>
-      <footer>
-            <div id="left-footer">
-                <h3>Quick Links</h3>
-                <p>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="bloglist.html">Blog</a></li>
-            <li><a href="book.html">Book</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </p>
-    </div>
-        <div id="right-footer">
-            <h3>Follow me on</h3>
-                <div id="social-media-footer">
-          <ul>
-            <li>
-              <a href="#">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iste
-          modi unde vero delectus! Rerum voluptatem magnam voluptas dolor
-          delectus animi enim vel, itaque amet sunt odio aut molestias
-          facere?Neque reiciendis ea earum id quaerat ipsum ducimus, est, nam
-          quis harum maxime? Deleniti, quis! Dolorum deleniti quo, consequuntur
-          laudantium recusandae illum, accusamus quos non sed saepe neque,
-          mollitia harum?
-        </p>
-        <div class="center">
-        <a href="#" class="btn-readmore">Read More</a>
-        </div>  
-      </footer>
+
+          <?php get_footer(); ?>
+
+
     </main>
     <script src="/js/main.js"></script>
   </body>

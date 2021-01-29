@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Martha Miller Writes</title>
-    <link rel="stylesheet" href="/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-      crossorigin="anonymous"
-    />
-  </head>
+<?php get_header(); ?>
   <body>
     <nav>
       <div>
@@ -43,19 +30,6 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <!-- <div id="banner">
-      <h1>Welcome to Martha Miller Writes</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, quas
-        quaerat nam eligendi fugit sed aspernatur commodi omnis quibusdam
-        corrupti nostrum adipisci unde asperiores. Mollitia maiores consequatur
-        laboriosam rerum quasi? Similique alias consequuntur deserunt sapiente
-        assumenda accusantium ab reiciendis dignissimos qui, praesentium,
-        adipisci cum voluptate quos reprehenderit maiores amet ex harum!
-        Accusantium natus quaerat consequuntur asperiores velit hic cumque
-        atque! Eligendi excepturi ex sunt omnis numquam!
-      </p>
-    </div> -->
     <main>
       <h2 class="page-heading">Blogs</h2>
 
@@ -156,48 +130,7 @@
           <a href="#">1</a>
           <a href="#">Next</a>
       </div>
-      <footer>
-            <div id="left-footer">
-                <h3>Quick Links</h3>
-                <p>
-                  <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="bloglist.html">Blog</a></li>
-                    <li><a href="book.html">Book</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                  </ul>
-        </p>
-    </div>
-        <div id="right-footer">
-            <h3>Follow me on</h3>
-                <div id="social-media-footer">
-          <ul>
-            <li>
-              <a href="#">
-                <i class="fab fa-linkedin"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iste
-          modi unde vero delectus! Rerum voluptatem magnam voluptas dolor
-          delectus animi enim vel, itaque amet sunt odio aut molestias
-          facere?Neque reiciendis ea earum id quaerat ipsum ducimus, est, nam
-          quis harum maxime? Deleniti, quis! Dolorum deleniti quo, consequuntur
-          laudantium recusandae illum, accusamus quos non sed saepe neque,
-          mollitia harum?
-        </p>
-        <div class="center">
-        <a href="#" class="btn-readmore">Read More</a>
-        </div>  
-      </footer>
+      <?php get_footer(); ?>
     </main>
     <script src="/js/main.js"></script>
   </body>
