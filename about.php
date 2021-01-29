@@ -1,35 +1,5 @@
 <?php get_header(); ?>
   <body>
-    <nav>
-      <div>
-        <ul id="main-menu">
-            <li><a href="bloglist.php">Blog</a></li>
-            <li><a href="book.php">Book</a></li>
-            <div id="logo">
-              <a href="index.php">
-                <img
-                  id="logo-img"
-                  src="/img/logo.png"
-                  alt="Martha Miller Writes Logo"
-                />
-              </a>
-            </div>
-            <li><a href="about.php">About</a></li>
-            <li><a href="contact.php">Contact</a></li>
-          </ul>
-      </div>
-      <!-- mobile -->
-      <div id="menu-icon">
-        <i class="fas fa-bars"></i>
-      </div>
-      <ul id="slideout-menu">
-        <li><a href="index.php">Home</a></li>
-        <li><a href="bloglist.php">Blog</a></li>
-        <li><a href="book.php">Book</a></li>
-        <li><a href="about.php">About</a></li>
-        <li><a href="contact.php">Contact</a></li>
-      </ul>
-    </nav>
     <main>
         <h2 class="page-heading">About Martha Miller</h2>
         <div id="post-container">
