@@ -11,22 +11,27 @@ body{
     font-family: 'Lato', sans-serif;
     color: #303F3C;
     margin: 0;
-    background-color: #E9E4E0;
+    background-color: #EFC7AE;
 }
 
-h1, h2 , h3, h4, h5, #banner h1 {
+h1, h2 , h3, h4, h5, h6 {
     font-family: Lora;
     font-weight: bold;
     color: #303F3C;
     text-align: center;
 }
 
-h1 {
+#banner h1 {
     padding: 8px;
+    font-family: Lora;
+
+    color: black;
     border-radius: 8px;
     margin: 0;
     font-size: 64px;
 }
+
+
 
 p {
     line-height: 1.5;
@@ -55,7 +60,7 @@ text-decoration: underline;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(img/rome-banner.jpg);
+    background-image: url(img/rome-banner-blurred.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -71,9 +76,10 @@ text-decoration: underline;
 
 .typing h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #303F3C; /* The typwriter cursor */
+    border-right: .15em solid white; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    color: white;
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
       typing 3.5s steps(40, end),
@@ -89,7 +95,7 @@ text-decoration: underline;
     /* The typewriter cursor effect */
     @keyframes blink-caret {
       from, to { border-color: transparent }
-      50% { border-color: #303F3C; }
+      50% { border-color: white; }
     }
 
 /* #banner h3{
@@ -113,15 +119,15 @@ background-color: black;}
 /* Nav */
 nav {
     height: 72px;
+    /* display: flex; */
+    justify-content: space-between;
     background: rgba(255, 255, 255, 0);
     width: 100%;
-    margin: 0;
-    position: fixed;
+    margin: auto;
+    position: absolute;
     font-family: 'Lato', sans-serif;
     text-align: center;
     font-size: 20px;
-    display: flex;
-    justify-content: space-between;
     padding: 0;
     box-sizing: border-box;
     z-index: 100;
@@ -140,7 +146,7 @@ nav a {
 
 nav a:hover {
     text-decoration: none;
-    color: orange;
+    color: white;
 }
 
 nav ul {
@@ -223,14 +229,25 @@ section{
 
 #blog-section{
     background-color: #712C35;
-    position: relative;
+    color: #EFC7AE;
+    /* position: relative; */
     width: 100%;
     left: 0;
 }
 
+#blog-section h2, #blog-section h3{
+    color: #EFC7AE;
+}
+
+#blog-section .btn-readmore{
+    background-color: #EFC7AE;
+    border: none;
+}
+
+
 /* Main paragraph */
 
-#paragrpah p{
+#paragraph p{
     padding: 8px;
     text-align: center;
 }
@@ -240,13 +257,23 @@ section{
     text-align: center;
 }
 
-#martha-miller-handwriting img{
-    height: 60px;
-    object-position: left top;
+#martha-miller-handwriting{
+    height: 45px;
 }
 
 .left-text{
     text-align: left;
+}
+
+.large-text{
+    text-align: left;
+    font-size: 80px;
+    padding: 100px;
+}
+
+.letter{
+    display: flex;
+    margin-bottom: 25px;
 }
 
 /* Cards */
@@ -255,9 +282,6 @@ section{
     transition: 0.4s;
 }
 
-.card-image:hover{
-    box-shadow: 0 10px 6px -6px #777;
-}
 
 .card .card-description{
     padding: 0 8px;
@@ -473,6 +497,14 @@ footer #social-media-footer ul li:hover a .fa-twitter{
         display: flex;
     }
 
+    nav {
+        background-color: peachpuff;
+    }
+
+    .letter{
+        margin: 10px;
+    }
+
     .slideout-menu{
         display: block;
     }
@@ -485,6 +517,7 @@ footer #social-media-footer ul li:hover a .fa-twitter{
     #sidebar{
         display: none;
     }
+
 }
 
 
@@ -540,6 +573,15 @@ footer #social-media-footer ul li:hover a .fa-twitter{
 
     .card{
         text-align: center;
+    }
+
+    .large-text{
+        font-size: 40px;
+        padding: 0px;
+    }
+    
+    .letter{
+        display: inherit;
     }
 }
 

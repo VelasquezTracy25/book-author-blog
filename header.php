@@ -19,6 +19,7 @@
               <?php if(is_page('about')) echo 'class="active"'?>
             >Book</a>
           </li>
+          <li>
           <div id="logo">
             <a href="<?php echo site_url('');?>"
               <?php if(is_front_page()) echo 'class="active"'?>>
@@ -29,6 +30,7 @@
               />
             </a>
           </div>
+          </li>
           <li>
             <a href="<?php echo site_url('/about'); ?>"
               <?php if(is_page('about')) echo 'class="active"'?>
