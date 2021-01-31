@@ -1,4 +1,4 @@
-alert("Hi!");
+// alert("Hi!");
 
 const menuIcon = document.getElementById("menu-icon");
 const slideoutMenu = document.getElementById("slideout-menu");

@@ -7,33 +7,25 @@ while(have_posts()) {
   
   <body>
     <main>
-        <h2 class="page-heading">About Martha Miller</h2>
+        <h2 class="page-heading"><?php the_title(); ?></h2>
         <div id="post-container">
             <section id="blogpost">
               <div class="card">
+                <?php if(has_post_thumbnail()) { ?>
                 <div class="card-image">
-                  <img src="/img/beach-1.jpg" alt="Card Image">
+                  <img src="<?php echo get_the_post_thumbnail_url(get_the_ID());?>" alt="Card Image">
                 </div>
+                <?php } ?>
                 <br>
                 <div class="card-description">
-                  <h3>The Introduction</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis fugiat sapiente corrupti iure vitae
-                    tempora magnam laboriosam eligendi voluptatem? Quisquam similique officia eum? Ullam ex iste in officia eveniet
-                    blanditiis quae iure ducimus explicabo dicta molestias, reiciendis quidem unde.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis fugiat sapiente corrupti iure vitae
-                    tempora magnam laboriosam eligendi voluptatem? Quisquam similique officia eum? Ullam ex iste in officia eveniet
-                    blanditiis quae iure ducimus explicabo dicta molestias, reiciendis quidem unde.</p>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis fugiat sapiente corrupti iure vitae
-                    tempora magnam laboriosam eligendi voluptatem? Quisquam similique officia eum? Ullam ex iste in officia eveniet
-                    blanditiis quae iure ducimus explicabo dicta molestias, reiciendis quidem unde.</p>
+                <?php echo get_the_content();?>
                 </div>
               </div>
             </section>
       
             <?php } ?>
             <aside id="sidebar">
-              <h3>Sidebar Heading</h3>
-              <p>Sidebar 1</p>
+              <?php dynamic_sidebar('main_sidebar')?>
             </aside>
           </div>
 

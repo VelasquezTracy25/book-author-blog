@@ -27,20 +27,16 @@
             </li>
           </ul>
         </div>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iste
-          modi unde vero delectus! Rerum voluptatem magnam voluptas dolor
-          delectus animi enim vel, itaque amet sunt odio aut molestias
-          facere?Neque reiciendis ea earum id quaerat ipsum ducimus, est, nam
-          quis harum maxime? Deleniti, quis! Dolorum deleniti quo, consequuntur
-          laudantium recusandae illum, accusamus quos non sed saepe neque,
-          mollitia harum?
-        </p>
-        <div class="center">
-        <a href="#" class="btn-readmore">Read More</a>
-        </div>  
-        <?php wp_head(); ?>
+        <?php wp_footer(); ?>
       </footer>
+      <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iste
+          modi unde vero delectus!
+        </p>
+        <!-- <div class="center">
+        <a href="#" class="btn-readmore">Read More</a>
+        </div>   -->
+</main>
     <script src="main.js"></script>
   </body>
 </html>

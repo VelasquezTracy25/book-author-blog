@@ -52,3 +52,7 @@
           <li><a href="<?php echo site_url('/contact'); ?>">Contact</a></li>
       </ul>
     </nav>
+
+    <?php if(!is_front_page()){ ?>
+      <main>
+      <?php } ?>

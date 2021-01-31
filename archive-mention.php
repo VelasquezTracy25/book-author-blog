@@ -15,7 +15,6 @@
         atque! Eligendi excepturi ex sunt omnis numquam!
       </p>
     </div> -->
-    <main>
       <a href="<?php echo site_url('/blog'); ?>">
         <h2 class="section-heading">All Blogs</h2>
       </a>
@@ -66,6 +65,5 @@
           architecto vel sunt. Provident, perferendis laudantium.
         </p>
       </section> -->
-      </main>
     <?php get_footer(); ?>
 
