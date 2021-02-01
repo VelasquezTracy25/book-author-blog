@@ -9,22 +9,22 @@ Version 1.0
 
 body{
     font-family: 'Lato', sans-serif;
-    color: #303F3C;
+    color: #405955;
     margin: 0;
-    background-color: #EFC7AE;
+    background-color: #D1BEAD;
 }
 
 h1, h2 , h3, h4, h5, h6 {
     font-family: Lora;
     font-weight: bold;
-    color: #303F3C;
+    color: #405955;
     text-align: center;
 }
 
 #banner h1 {
     padding: 8px;
     font-family: Lora;
-    color: #303F3C;
+    color: #405955;
     border-radius: 8px;
     margin: 0;
     font-size: 50px;
@@ -41,6 +41,7 @@ p {
 }
 
 main{
+    width: 100%;
     margin: auto;
 }
 
@@ -143,7 +144,7 @@ a {
 
 nav a {
     padding: 0 32px;
-    color: #303F3C;
+    color: #405955;
     transition: 0.4s;
 }
 
@@ -165,21 +166,21 @@ nav ul {
 span {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    color: #303F3C; 
+    color: #405955; 
 }
 
 #menu-icon{
     height: 100;
     font-size: 28px;
     padding: 0 4px;
-    color: #303F3C;
+    color: #405955;
     display: none;
     align-items: center;
 }
 
 #slideout-menu{
     display: none;
-    background-color: peachpuff;
+    background-color: #D1BEAD;
     z-index: 100;
     position: fixed; 
     transition: 0.4s;
@@ -202,7 +203,7 @@ span {
 #slideout-menu{
     font-family: 'Lato', sans-serif;
     font-size: 20px;
-    color: #303F3C;
+    color: #405955;
     display: block;
 }
 
@@ -217,33 +218,34 @@ section{
     font-size: 32px;
     font-family: Lora;
     font-weight: bold;
-    border-left: 3px solid #303F3C;
-    border-right: 3px solid #303F3C;
+    border-left: 3px solid #405955;
+    border-right: 3px solid #405955;
+    margin-left: 25px;
     transition: all 0.4s;
     display:inline-block;
-    padding: 4px 32px;
-    color: #303F3C;
+    padding: 4px 20px;
+    color: #405955;
 }
 
 .section-heading:hover{
     padding: 4px 48px;
-    background-color: peachpuff;
+    background-color: #D1BEAD;
 }
 
 #blog-section{
     background-color: #712C35;
-    color: #EFC7AE;
-    /* position: relative; */
-    width: 100%;
+    color: #D1BEAD;
+    position: static;
     left: 0;
+    margin-bottom: 30px;
 }
 
 #blog-section h2, #blog-section h3{
-    color: #EFC7AE;
+    color: #D1BEAD;
 }
 
 #blog-section .btn-readmore{
-    background-color: #EFC7AE;
+    background-color: #D1BEAD;
     border: none;
 }
 
@@ -293,7 +295,7 @@ section{
 }
 
 .card-meta-blogpost{
-    color:#303F3C;
+    color:#405955;
     font-size:14px;
     padding: 16px;
     font-family: 'Lato', sans-serif;
@@ -307,7 +309,7 @@ section{
 
 .btn-readmore {
     padding: 8px 24px;
-    color: #303F3C;
+    color: #405955;
     border: 3px solid black;
     transition: 0.4s;
     display: inline-block;
@@ -319,7 +321,7 @@ section{
 }
 
 .btn-readmore:hover{
-    background-color: peachpuff;
+    background-color: #D1BEAD;
     padding: 8px 64px;
     color: white;
 
@@ -332,17 +334,17 @@ section{
 footer{
     background-color: white;
     padding: 8px;
-    color: #303F3C;
+    color: #405955;
     display: flex;
 }
 
 footer a {
-    color: #303F3C;
+    color: #405955;
 }
 
 footer #left-footer{
     flex: 1;
-    border-right: 1px solid #303F3C;
+    border-right: 1px solid #405955;
     padding-left: 32px;
 }
 
@@ -359,7 +361,7 @@ footer #right-footer{
 }
 
 footer #social-media-footer a .fa-linkedin, footer #social-media-footer a .fa-twitter{
-    color: #303F3C;
+    color: #405955;
     transition: 0.4s;
 } 
 
@@ -377,11 +379,11 @@ footer #social-media-footer ul li{
 }
 
 footer #social-media-footer ul li:hover a .fa-linkedin{
-    color: peachpuff;
+    color: #D1BEAD;
 }
 
 footer #social-media-footer ul li:hover a .fa-twitter{
-    color: peachpuff;
+    color: #D1BEAD;
 }
 
 /* Bloglist Page */
@@ -399,18 +401,18 @@ footer #social-media-footer ul li:hover a .fa-twitter{
 
 .page-heading:hover{
     padding: 4px 48px;
-    background: peachpuff;
+    background: #D1BEAD;
 }
 
 .card-meta{
-    color: #303F3C;
+    color: #405955;
     font-size: 14px;
     padding-left: 8px;
     font-family: 'Lato', sans-serif;
 }
 
 .card-meta a{
-    color: #303F3C;
+    color: #405955;
 }
 
 /* Pagination */
@@ -446,7 +448,7 @@ footer #social-media-footer ul li:hover a .fa-twitter{
     display: flex;
     flex-direction: column;
     width: 70%;
-    border-left: 1px solid #303F3C;
+    border-left: 1px solid #405955;
 }
 
 #blogpost .card{
@@ -459,7 +461,7 @@ footer #social-media-footer ul li:hover a .fa-twitter{
     margin-bottom: 30px;
 }
 
-#blogpost .card-description {
+#post .card-description {
     margin-bottom: 30px;
 }
 
@@ -470,16 +472,20 @@ footer #social-media-footer ul li:hover a .fa-twitter{
 /* Sidebar */
 
 #sidebar{
-    background: peachpuff;
+    background: #712C35;
     font-family: 'Lato', sans-serif;
     flex: 1;
     padding: 8px 15px;
-    color: #303F3C;
+    color: #D1BEAD;
     /* box-shadow: inset 27px 0 51px -18px rgba(0, 0, 0, 0.75); */
 }
 
-#sidebar a {
-    color: #303F3C;
+#sidebar a, 
+#sidebar h3
+{
+    color: #D1BEAD;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 #sidebar li {
@@ -489,6 +495,10 @@ footer #social-media-footer ul li:hover a .fa-twitter{
 
 #sidebar li li {
     margin-left: -16px;
+}
+
+.twitter-timeline{
+    height: 500px;
 }
 
 
@@ -503,7 +513,7 @@ footer #social-media-footer ul li:hover a .fa-twitter{
     }
 
     nav {
-        background-color: peachpuff;
+        background-color: #D1BEAD;
     }
 
     .letter{
@@ -552,17 +562,17 @@ footer #social-media-footer ul li:hover a .fa-twitter{
     }
 
     footer #right-footer{
-        background: peachpuff;
+        background: #D1BEAD;
     }
 
     footer #right-footer a {
-        color: #303F3C;
-        background-color: peachpuff;
+        color: #405955;
+        background-color: #D1BEAD;
     }
 
     footer #social-media-footer a .fa-linkedin,
     footer #social-media-footer a .fa-linkedin{
-        color: #303F3C;
+        color: #405955;
         transition: 0.4s;
     }
 }

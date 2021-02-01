@@ -28,8 +28,6 @@
             </section>
             <aside id="sidebar">
               <?php dynamic_sidebar('main_sidebar'); ?>
-              <h3>Sidebar Heading</h3>
-              <p>Sidebar 1</p>
             </aside>
           </div>
           <?php get_footer();?>
