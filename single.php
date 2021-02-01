@@ -1,10 +1,14 @@
+<!-- Single Blog Post -->
+
 <?php get_header(); ?>  
-<body>
-    <main>
+
     <?php
     while(have_posts()){
       the_post();
     ?>
+
+<body>
+    <main>
         <h2 class="page-heading"><?php the_title()?></h2>
         <div id="post-container">
             <section id="blogpost">

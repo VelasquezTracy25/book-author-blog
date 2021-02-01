@@ -24,13 +24,16 @@ h1, h2 , h3, h4, h5, h6 {
 #banner h1 {
     padding: 8px;
     font-family: Lora;
-
-    color: black;
+    color: #303F3C;
     border-radius: 8px;
     margin: 0;
-    font-size: 64px;
+    font-size: 50px;
 }
 
+.banner-text{
+    width: 50vw;
+    text-align: right;
+}
 
 
 p {
@@ -258,7 +261,8 @@ section{
 }
 
 #martha-miller-handwriting{
-    height: 45px;
+    float: left;
+    height: 48px;
 }
 
 .left-text{
@@ -274,6 +278,7 @@ section{
 .letter{
     display: flex;
     margin-bottom: 25px;
+    padding-top: 20px;
 }
 
 /* Cards */

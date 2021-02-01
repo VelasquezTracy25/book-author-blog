@@ -36,7 +36,7 @@
         <!-- <div class="center">
         <a href="#" class="btn-readmore">Read More</a>
         </div>   -->
-</main>
+<!-- </main> -->
     <script src="main.js"></script>
   </body>
 </html>
