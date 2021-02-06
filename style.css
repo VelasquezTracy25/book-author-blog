@@ -24,14 +24,14 @@ h1, h2 , h3, h4, h5, h6 {
 #banner h1 {
     padding: 8px;
     font-family: Lora;
-    color: #405955;
+    color: white;
     border-radius: 8px;
     margin: 0;
     font-size: 50px;
 }
 
 .banner-text{
-    width: 50vw;
+    width: 60vw;
     text-align: right;
 }
 
@@ -84,7 +84,7 @@ text-decoration: underline;
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     color: white;
-    letter-spacing: .15em; /* Adjust as needed */
+    letter-spacing: .12em; /* Adjust as needed */
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -169,6 +169,8 @@ span {
     color: #405955; 
 }
 
+
+
 #menu-icon{
     height: 100;
     font-size: 28px;
@@ -249,6 +251,10 @@ section{
     border: none;
 }
 
+.banner-readmore{
+    text-align:center;
+    border: none;
+}
 
 /* Main paragraph */
 
@@ -263,7 +269,7 @@ section{
 }
 
 #martha-miller-handwriting{
-    float: left;
+    text-align: left;
     height: 48px;
 }
 
@@ -310,14 +316,14 @@ section{
 .btn-readmore {
     padding: 8px 24px;
     color: #405955;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     transition: 0.4s;
     display: inline-block;
     margin-bottom: 24px;
-    margin-left: 24px;
     font-weight: bold;
     cursor: pointer;
     background-color: white;
+    border-radius: 8px;
 }
 
 .btn-readmore:hover{
@@ -336,6 +342,8 @@ footer{
     padding: 8px;
     color: #405955;
     display: flex;
+    text-align: center;
+
 }
 
 footer a {
@@ -501,9 +509,15 @@ footer #social-media-footer ul li:hover a .fa-twitter{
     height: 500px;
 }
 
+#footer-fine-print{
+    text-align: center;
+    font-style: italic;
+}
+
 
 /* Media Queries */
 @media (max-width: 900px){
+
     nav ul {
         display: none;
     }

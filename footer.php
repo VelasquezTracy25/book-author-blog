@@ -29,9 +29,9 @@
         </div>
         <?php wp_footer(); ?>
       </footer>
-      <p>
+      <p id="footer-fine-print">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iste
-          modi unde vero delectus!
+          modi unde vero delectus! 2021 &#169
         </p>
         <!-- <div class="center">
         <a href="#" class="btn-readmore">Read More</a>
