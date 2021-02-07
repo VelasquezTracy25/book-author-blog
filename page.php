@@ -1,4 +1,5 @@
 <!-- About -->
+<!-- Books-->
 
 <?php get_header();
 
@@ -30,11 +31,9 @@ while (have_posts()) {
         <?php dynamic_sidebar('main_sidebar') ?>
       </aside>
       </div>
-
-      <?php get_footer(); ?>
-
-
     </main>
+    <?php get_footer(); ?>
+
     <script src="/js/main.js"></script>
   </body>
 

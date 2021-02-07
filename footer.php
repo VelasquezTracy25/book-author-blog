@@ -33,10 +33,6 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iste
           modi unde vero delectus! 2021 &#169
         </p>
-        <!-- <div class="center">
-        <a href="#" class="btn-readmore">Read More</a>
-        </div>   -->
-<!-- </main> -->
     <script src="main.js"></script>
   </body>
 </html>
