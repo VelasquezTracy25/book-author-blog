@@ -5,7 +5,7 @@
 <body>
     <main>
       <a href="<?php echo site_url('/blog'); ?>">
-        <h2 class="section-heading">All Blogs</h2>
+        <h2 class="section-heading">Page Title</h2>
       </a>
 
       <section>

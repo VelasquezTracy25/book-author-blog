@@ -9,6 +9,8 @@ function mm_setup(){
     wp_enqueue_script('main', get_theme_file_uri('/js/main.js'), NULL, microtime(), true);
 }
 
+// ***Microtime needs to be updated when site launches
+
 add_action('wp_enqueue_scripts', 'mm_setup');
 
 // Adding Theme support
@@ -23,29 +25,29 @@ function mm_init(){
 
 add_action('after_setup_theme', 'mm_init');
 
-// News Posts Type
+// News Posts Type -- for use when News/Mentions need to be added
 
-function mm_custom_post_type(){
-    register_post_type('mentions',
-    array(
-        'rewrite' => array('slug' => 'mentions'),
-        'labels' => array(
-            'name' => 'Mentions',
-            'singular_name' => 'Mention',
-            'add_new_item' => 'Add New Mention',
-            'edit_item' => 'Edit Mention'
-        ),
-        'menu-icon' => 'dashicons-clipboard',
-        'public' => true,
-        'has_archive' => true,
-        'supports' => array(
-            'title', 'thumbnail', 'editor', 'excerpt', 'comments'
-            )
-        )
-    );
-}
+// function mm_custom_post_type(){
+//     register_post_type('mentions',
+//     array(
+//         'rewrite' => array('slug' => 'mentions'),
+//         'labels' => array(
+//             'name' => 'Mentions',
+//             'singular_name' => 'Mention',
+//             'add_new_item' => 'Add New Mention',
+//             'edit_item' => 'Edit Mention'
+//         ),
+//         'menu-icon' => 'dashicons-clipboard',
+//         'public' => true,
+//         'has_archive' => true,
+//         'supports' => array(
+//             'title', 'thumbnail', 'editor', 'excerpt', 'comments'
+//             )
+//         )
+//     );
+// }
 
-add_action('init', 'mm_custom_post_type');
+// add_action('init', 'mm_custom_post_type');
 
 //Sidebar
 

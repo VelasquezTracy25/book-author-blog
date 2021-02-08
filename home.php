@@ -1,13 +1,14 @@
-<!-- Generica catchall template-->
-
+<!-- Blogs  -->
 <?php get_header(); ?>
 
 <body>
     <main>
-      <!-- <a href="<?php echo site_url('/blogf'); ?>">
-        <h2 class="section-heading">Page title</h2>
-      </a> -->
+      <a href="<?php echo site_url('/blog'); ?>">
+        <h2 class="section-heading">All Blogs</h2>
+      </a>
+
       <section>
+      
       <?php
 
       while (have_posts()){
@@ -42,8 +43,9 @@
         <?php echo paginate_links(); ?>
       </div>
       
-      <?php get_footer(); ?>
       </main>
+      <?php get_footer(); ?>
+
       <script src="/js/main.js"></script>
       </body>
     </html>

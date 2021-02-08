@@ -1,4 +1,4 @@
-<!-- Blog
+<!-- KEEP FOR REF - Old Version -->
 <?php get_header(); ?>
 
 <body>
@@ -54,4 +54,4 @@
   <script src="/js/main.js"></script>
 </body>
 
-</html> -->
+</html>
