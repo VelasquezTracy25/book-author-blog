@@ -1,14 +1,10 @@
-<!-- Blogs  -->
+<!-- Blogs Index -->
 <?php get_header(); ?>
 
-<body>
     <main>
-      <a href="<?php echo site_url('/blog'); ?>">
-        <h2 class="section-heading">All Blogs</h2>
-      </a>
+    <h2 class="page-heading">All Blogs</h2>
 
       <section>
-      
       <?php
 
       while (have_posts()){
@@ -45,8 +41,3 @@
       
       </main>
       <?php get_footer(); ?>
-
-      <script src="/js/main.js"></script>
-      </body>
-    </html>
-

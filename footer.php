@@ -32,7 +32,7 @@
       <p id="footer-fine-print">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iste
           modi unde vero delectus! 2021 &#169
-        </p>
+      </p>
     <script src="main.js"></script>
   </body>
 </html>
