@@ -3,20 +3,6 @@
 <?php get_header(); ?>
 
 <body>
-
-    <!-- <div id="banner">
-      <h1>Welcome to Martha Miller Writes</h1>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, quas
-        quaerat nam eligendi fugit sed aspernatur commodi omnis quibusdam
-        corrupti nostrum adipisci unde asperiores. Mollitia maiores consequatur
-        laboriosam rerum quasi? Similique alias consequuntur deserunt sapiente
-        assumenda accusantium ab reiciendis dignissimos qui, praesentium,
-        adipisci cum voluptate quos reprehenderit maiores amet ex harum!
-        Accusantium natus quaerat consequuntur asperiores velit hic cumque
-        atque! Eligendi excepturi ex sunt omnis numquam!
-      </p>
-    </div> -->
     <main>
       <a href="<?php echo site_url('/blog'); ?>">
         <h2 class="section-heading">All Blogs</h2>

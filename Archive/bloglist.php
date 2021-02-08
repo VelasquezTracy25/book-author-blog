@@ -1,3 +1,4 @@
+<!-- Blog
 <?php get_header(); ?>
 
 <body>
@@ -53,4 +54,4 @@
   <script src="/js/main.js"></script>
 </body>
 
-</html>
+</html> -->
