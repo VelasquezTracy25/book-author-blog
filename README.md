@@ -6,17 +6,17 @@ Martha Miller Writes is a website redesign for a personal blog that allows the b
 
 ### Languages and Resources Used
 
-*HTML
-*CSS
-*PHP
-*JavaScript
-*WP Engine
+* HTML
+* CSS
+* PHP
+* JavaScript
+* WP Engine
 
 
 ### Site Navigation
 
-| Home Page |
-| Blog | 
-| Book | 
-| About | 
-| Contact | 
+* Home Page
+* Blog 
+* Book 
+* About 
+* Contact
