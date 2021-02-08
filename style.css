@@ -19,10 +19,12 @@ h1, h2 , h3, h4, h5, h6 {
     font-weight: bold;
     color: #405955;
     text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212);
+
 }
 
 #banner h1 {
-    padding: 8px;
+    padding: 0px;
     font-family: Lora;
     color: white;
     border-radius: 8px;
@@ -38,6 +40,8 @@ h1, h2 , h3, h4, h5, h6 {
 
 p {
     line-height: 1.5;
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212); */
+
 }
 
 main{
@@ -48,6 +52,7 @@ main{
 a {
     text-decoration: none;
     color: black;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212);
   }
   
 a:hover {
@@ -74,6 +79,7 @@ text-decoration: underline;
 
 #banner p {
     text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212);
     padding: 0 40px;
     font-size: 18px;
 }
@@ -85,6 +91,7 @@ text-decoration: underline;
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     color: white;
     letter-spacing: .12em; /* Adjust as needed */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212);
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -269,7 +276,7 @@ section{
 }
 
 #martha-miller-handwriting{
-    text-align: left;
+    /* text-align: left; */
     height: 48px;
 }
 
@@ -281,6 +288,8 @@ section{
     text-align: left;
     font-size: 80px;
     padding: 100px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212);
+
 }
 
 .letter{
@@ -324,12 +333,17 @@ section{
     cursor: pointer;
     background-color: white;
     border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.212);
+    text-shadow: none;
+
+
 }
 
 .btn-readmore:hover{
-    background-color: #D1BEAD;
+    background-color: #405955;
     padding: 8px 64px;
     color: white;
+    text-decoration: none;
 
 }
 
@@ -607,6 +621,7 @@ footer #social-media-footer ul li:hover a .fa-twitter{
     .large-text{
         font-size: 40px;
         padding: 0px;
+        text-align: center;
     }
     
     .letter{

@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
     <main>
-    <h2 class="page-heading">All Blogs</h2>
+    <h1 class="page-heading">All Blogs</h1>
 
       <section>
       <?php
@@ -31,7 +31,7 @@
             </div>
       </div>
 
-    <?php  } wp_reset_query(); ?>
+      <?php  } wp_reset_query(); ?>
 
       </section>
 

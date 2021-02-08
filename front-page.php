@@ -1,10 +1,10 @@
 <?php get_header(); ?>
 
 <div id="banner">
-  <div class="banner-text">
-    <div class="typing">
+<div class="typing">
       <h1>Times New Roman</h1>
     </div>
+  <div class="banner-text">
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex, quas
       quaerat nam eligendi fugit sed aspernatur commodi omnis quibusdam
