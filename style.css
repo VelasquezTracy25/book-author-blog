@@ -242,11 +242,14 @@ section{
 }
 
 #blog-section{
-    background-color: #712C35;
+    background-color:none;
     color: #D1BEAD;
     position: static;
     left: 0;
     margin-bottom: 30px;
+    height: 600px;
+    display:flex;
+    text-align: center;
 }
 
 #blog-section h2, #blog-section h3{
@@ -300,13 +303,27 @@ section{
 
 /* Cards */
 
+.card{
+    background-color: #405955;
+    width: 30%;
+    margin: 20px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .card-image{
     transition: 0.4s;
+    border-radius: 50%;
+    height: 225px;
+    width: 225px;
 }
 
 
-.card .card-description{
+.card .card-description, .card h3{
     padding: 0 8px;
+    color: #D1BEAD;
 }
 
 .card-meta-blogpost{
@@ -563,6 +580,10 @@ footer #social-media-footer ul li:hover a .fa-twitter{
 
 }
 
+#contact-form{
+    width: 70vw;
+    clear: both;
+}
 
 @media(max-width:719px){
     main {
@@ -617,6 +638,7 @@ footer #social-media-footer ul li:hover a .fa-twitter{
     .card{
         text-align: center;
     }
+
 
     .large-text{
         font-size: 40px;

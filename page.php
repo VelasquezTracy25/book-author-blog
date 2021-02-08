@@ -10,7 +10,9 @@ while (have_posts()) {
 
   <body>
     <main>
+    
       <h1 class="page-heading"><?php the_title(); ?></h1>
+      
       <div id="post-container">
         <section id="blogpost">
           <div class="card">
@@ -25,12 +27,20 @@ while (have_posts()) {
             </div>
           </div>
         </section>
-
       <?php } ?>
+      <div id="contact-form">
+        <?php 
+          if ( is_page('contact')) { 
+            echo do_shortcode('[contact-form-7 id="42 contact-form" title="Contact"]');
+          } 
+        ?>
+        </div>
       <aside id="sidebar">
         <?php dynamic_sidebar('main_sidebar') ?>
       </aside>
       </div>
+
+      
     </main>
     <?php get_footer(); ?>
 
