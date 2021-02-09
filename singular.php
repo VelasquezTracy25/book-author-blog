@@ -22,15 +22,15 @@
                 <br>
                 <div class="card-description">
                   <h3><?php the_title();?> </h3>
-    <?php } the_content();?>
+                <?php } the_content();?>
                 </div>
-    </div>
+        <!-- </div> -->
             </section>
-            <aside id="sidebar">
-              <?php dynamic_sidebar('main_sidebar'); ?>
-            </aside>
-          </div>
-          <?php get_footer();?>
+        <aside id="sidebar">
+          <?php dynamic_sidebar('main_sidebar'); ?>
+        </aside>
+        </div>
+        <?php get_footer();?>
     </main>
     <script src="/js/main.js"></script>
   </body>

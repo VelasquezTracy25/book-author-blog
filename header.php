@@ -27,7 +27,8 @@
         <li>
           <a href="<?php echo site_url('/about'); ?>" <?php if (is_page('about')) echo 'class="active"' ?>>About</a>
         </li>
-        <li><a href="<?php echo site_url('/contact'); ?>" <?php if (is_page('contact')) echo 'class="active"' ?>>Contact</a>
+        <li>
+          <a href="<?php echo site_url('/contact'); ?>" <?php if (is_page('contact')) echo 'class="active"' ?>>Contact</a>
         </li>
       </ul>
     </div>
@@ -43,7 +44,5 @@
       <li><a href="<?php echo site_url('/contact'); ?>">Contact</a></li>
     </ul>
   </nav>
-
   <?php if (!is_front_page()) { ?>
-    <!-- <main> -->
   <?php } ?>
