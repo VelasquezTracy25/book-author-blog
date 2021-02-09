@@ -12,7 +12,7 @@
       ?>
       
       <div class="card">
-          <div class="card-image">
+          <div class="card-image" style="margin-top: 15px;">
             <a href="<?php echo the_permalink(); ?>">
               <img src="<?php echo get_the_post_thumbnail_url(get_the_ID()) ?>" alt="Card Image" class="card-image" />
             </a>

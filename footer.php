@@ -12,7 +12,7 @@
         </p>
     </div>
         <div id="right-footer">
-            <h3>Follow me on</h3>
+            <h3>Where to Find Martha</h3>
                 <div id="social-media-footer">
           <ul>
             <li>
