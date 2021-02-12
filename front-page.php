@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 
 <div id="banner">
+  <div class="static">
+    <h1>Times New Roman</h1>
+  </div>
   <div class="typing">
     <h1>Times New Roman</h1>
   </div>

@@ -88,6 +88,10 @@ text-decoration: underline;
     font-size: 18px;
 }
 
+.static{
+    display: none;
+}
+
 .typing h1 {
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid white; /* The typwriter cursor */
@@ -282,7 +286,6 @@ section{
 }
 
 #martha-miller-handwriting{
-    /* text-align: left; */
     margin-top: 0;
     height: 48px;
 }
@@ -626,11 +629,27 @@ footer #social-media-footer ul li:hover a .fa-twitter{
 /* Media Queries */
 @media (max-width: 900px){
 
+    #banner{
+        height: 80vh;
+    }
+
+    .typing{
+        display: none;
+    }
+    
+    .static{
+        font-size: 60px;
+        color: white;
+        display: inline;
+    }
+
     nav ul {
         display: none;
     }
 
-    .circle-div, #paragraph.left-text, #martha-miller-handwriting{
+    .circle-div, 
+    #paragraph.left-text, 
+    #martha-miller-handwriting {
         margin: auto;
     }
 
@@ -648,9 +667,14 @@ footer #social-media-footer ul li:hover a .fa-twitter{
 
     .card-home{
         width: 100%;
-        margin: auto;
-        padding-left: 0;
+        margin: 10px auto 0 auto;
+    }
 
+    .card-image-home img{
+        height: 250px;
+        width: 250px;
+        margin-top: 15px;
+        margin-bottom: 0px;
     }
 
     #menu-icon{
@@ -677,6 +701,11 @@ footer #social-media-footer ul li:hover a .fa-twitter{
     #sidebar{
         display: none;
     }
+
+    footer{
+/*  */
+    }
+
 
 }
 
