@@ -1,5 +1,6 @@
 <!-- About -->
 <!-- Books-->
+<!-- contact -->
 
 <?php get_header();
 
@@ -10,7 +11,8 @@ while (have_posts()) {
 
   <body>
     <main>
-      <h1 class="page-heading"><?php the_title(); ?></h1>
+    <h1 class="page-heading"><?php the_title(); ?></h1>
+    <div id="page-main">
       <div id="post-container">
         <section id="blogpost">
           <div class="card">
@@ -20,24 +22,26 @@ while (have_posts()) {
               </div>
             <?php } ?>
             <br>
-            <div class="card-description">
+            <div class="card-description contact-description">
               <?php echo get_the_content(); ?>
             </div>
           </div>
         </section>
-      <?php } ?>
-      <div id="contact-form">
+        <?php } ?>
+        <div id="contact-form">
         <?php 
           if ( is_page('contact')) { 
             echo do_shortcode('[contact-form-7 id="42 contact-form" title="Contact"]');
           } 
         ?>
-      </div>
+        </div>
+    </div>
+      </main>
       <aside id="sidebar">
         <?php dynamic_sidebar('main_sidebar') ?>
       </aside>
       </div>
-    </main>
+    
     <?php get_footer(); ?>
     <script src="/js/main.js"></script>
   </body>

@@ -1,4 +1,4 @@
-<!-- Generica catchall template-->
+<!-- Generic catchall template-->
 
 <?php get_header(); ?>
 
