@@ -658,7 +658,9 @@ footer #social-media-footer ul li:hover a .fa-twitter{
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin: auto;
+        /*TODO:  FIX LATER */
+        margin: 0 auto 950px auto;
+        /* margin-bottom: 50px; */
         padding-left: 5px;
         padding-right: 5px;
         padding-bottom: 15px;
@@ -691,7 +693,7 @@ footer #social-media-footer ul li:hover a .fa-twitter{
 
     .slideout-menu{
         display: block;
-    }
+    }s
 
     #blog-post{
         width: 100%;
@@ -731,7 +733,7 @@ footer #social-media-footer ul li:hover a .fa-twitter{
     footer {
         flex-direction: column;
         text-align: center;
-      }
+    }
 
     footer #left-footer{
         flex: 1;
